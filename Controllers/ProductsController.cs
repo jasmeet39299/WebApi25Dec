@@ -7,7 +7,7 @@ using WebApi25Dec.Models;
 namespace WebApi25Dec.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] 
     [Authorize]
     public class ProductsController : ControllerBase
     {
