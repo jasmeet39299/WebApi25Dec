@@ -3,6 +3,12 @@
     "apis1": {
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/WebServiceApiMgt/apis/WebApi25Dec",
       "type": "apis.azure"
+    },
+    "identityapp1": {
+      "connectionInfo": "App registration: TenantApp, Tenant: Default Directory (jazzi3929hotmail.onmicrosoft.com - Microsoft Entra ID)",
+      "secretStore": null,
+      "resourceId": null,
+      "type": "identityapp.default"
     }
   }
 }

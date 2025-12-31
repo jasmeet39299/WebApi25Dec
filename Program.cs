@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using WebApi25Dec.Data;
 using WebApi25Dec.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Identity.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +33,9 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = key
     };
 });
+//    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
+
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme);
 
 
 // Add services to the container.
